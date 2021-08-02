@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Happy Birthday !!! :)</title>
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400" rel="stylesheet">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<style>
+  body{
+    background-image: url("/img/r2.jpg");
+    
+	/*background-color: #FFDAB9;	*/
+	
+	-webkit-transition:background-size cover;
+	-moz-transition:background-color cover ;
+	-o-transition:background-color cover ;
+	-ms-transition:background-color cover ;
+	transition:background-color cover;
+	background-size: cover;
+
+  }
+</style>
+
+<body >
+
+  <div class="container" >
+    
+    <div class="one">
+      <h1 class="one">Hey
+        <span id="name">Anushka</span>
+      </h1>
+      <p class="two" id="greetingText">I really like your name btw!</p>
+    </div>
+    <div class="three">
+      <p>It's your birthday!!! :D</p>
+    </div>
+    <div class="four">
+      <div class="text-box">
+        <p class="hbd-chatbox">Happy birthday to you!! Yeee! Many many happy blah...</p>
+        <p class="fake-btn">Send</p>
+      </div>
+    </div>
+    <div class="five">
+      <p class="idea-1">That's what I was going to do.</p>
+      <p class="idea-2">But then I stopped.</p>
+      <p class="idea-3">I realised, I wanted to do something
+        <strong>special</strong>.</p>
+      <p class="idea-4">Because,</p>
+      <p class="idea-5">You are Special
+        <span>:)</span>
+      </p>
+      <p class="idea-6">
+        <span>S</span>
+        <span>O</span>
+      </p>
+    </div>
+    <script>
+
+      var current = 0;
+      var rotator_obj = null;
+  
+      var images_array = new Array();
+      images_array[0] = "rotator_1";
+      images_array[1] = "rotator_2";
+      images_array[2] = "rotator_3";
+  
+      var rotate_them = setInterval(function(){rotating()},4000);
+  
+      function rotating(){
+  
+          rotator_obj = document.getElementById(images_array[current]);
+  
+          if(current != 0) {
+  
+              var rotator_obj_pass = document.getElementById(images_array[current-1]);
+              rotator_obj_pass.style.left = "-320px";
+  
+          }
+          else {
+  
+              rotator_obj.style.left = "-320px";
+  
+          }
+  
+          var slideit = setInterval(function(){change_position(rotator_obj)},30);
+  
+          current++;
+  
+          if (current == images_array.length+1) {
+  
+              var rotator_obj_passed = document.getElementById(images_array[current-2]);
+              rotator_obj_passed.style.left = "-320px";
+              current = 0;
+              rotating();
+  
+          }
+  
+      }
+  
+      function change_position(rotator_obj, type) {
+  
+          var intleft = parseInt(rotator_obj.style.left);
+  
+          if (intleft != 0) {
+  
+              rotator_obj.style.left = intleft + 32 + "px";
+  
+          }
+          else if (intleft == 0) {
+  
+              clearInterval(slideit);
+  
+          }
+  
+      }
+  
+  
+  </script>
+    <div class="six">
+      <img src="img/r11.jpg" alt="" class="lydia-dp" id="imagePath" height="200" width="200">
+      <!-- <div id="rotate_outer">
+        <img src="img/r1.jpg" id="rotator_1" style="bottom:10px;right: 10px;" />
+        <img src="img/r2.jpg" id="rotator_2" style="bottom:10px;right: 10px;" />
+        <img src="img/R.jpg" id="rotator_3" style="bottom:10px;right: 10px;" />
+      </div>
+   -->
+      
+      
+      <!-- <img src="img/hat.svg" alt="" class="hat"> -->
+      <div class="wish">
+        <h3 class="wish-hbd">Happy Birthday!</h3>
+        <h5 id="wishText">My wonderful friend. I have come to understand that living is fulfilling with you. You are a blend of everything I want in a friend. May this be your happiest day in life, and others will follow suit. I am happy for you as you add one more year, many more years of good health and sound mind for you. Happy birthday to you my beautiful friend. I cherish you forever. ;)</h5>
+      </div>
+    </div>
+    <div class="seven">
+      <div class="baloons">
+        <img src="img/ballon2.svg" alt="">
+        <img src="img/ballon1.svg" alt="">
+        <img src="img/ballon3.svg" alt="">
+        <img src="img/ballon1.svg" alt="">
+        <img src="img/ballon2.svg" alt="">
+        <img src="img/ballon3.svg" alt="">
+        <img src="img/ballon2.svg" alt="">
+        <img src="img/ballon3.svg" alt="">
+        <img src="img/ballon1.svg" alt="">
+        <img src="img/ballon2.svg" alt="">
+        <img src="img/ballon3.svg" alt="">
+     
+        <img src="img/ballon2.svg" alt="">
+        <img src="img/ballon1.svg" alt="">
+        <img src="img/ballon3.svg" alt="">
+        <img src="img/ballon2.svg" alt="">
+        <img src="img/ballon3.svg" alt="">
+        <img src="img/ballon1.svg" alt="">
+        <img src="img/ballon2.svg" alt="">
+        <img src="img/ballon1.svg" alt="">
+        
+        <img src="img/ballon3.svg" alt="">
+        <img src="img/ballon3.svg" alt="">
+        <img src="img/ballon1.svg" alt="">
+        <img src="img/ballon2.svg" alt="">
+        <img src="img/ballon3.svg" alt="">
+        <img src="img/ballon2.svg" alt="">
+        <img src="img/ballon1.svg" alt="">
+      
+        <img src="img/ballon3.svg" alt="">
+        <img src="img/ballon2.svg" alt="">
+        <img src="img/ballon3.svg" alt="">
+        <img src="img/ballon1.svg" alt="">
+        <img src="img/ballon2.svg" alt="">
+        <img src="img/ballon1.svg" alt="">
+        <img src="img/ballon3.svg" alt="">
+      </div>
+    </div>
+    <div class="eight">
+      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="20" />
+      </svg>
+      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="20" />
+      </svg>
+      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="20" />
+      </svg>
+      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="20" />
+      </svg>
+      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="20" />
+      </svg>
+      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="20" />
+      </svg>
+      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="20" />
+      </svg>
+      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="20" />
+      </svg>
+      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="20" />
+      </svg>
+    </div>
+    
+    <div class="nine" >
+      
+     
+      <p>Okay, now come back and tell me if you liked it.</p>
+      <p id="replay">Or click, if you want to watch it again.</p>
+      <p class="last-smile">:)</p>
+    </div>
+
+    <audio src="hbsong.mp3" id="my_audio" loop="loop"></audio>
+  <script type="text/javascript">
+    window.onload=function(){
+      document.getElementById("my_audio").play();
+    }
+  </script
+
+
+  </div>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+<script type="application/javascript" src="script/main.js"></script>
+
+</html>
